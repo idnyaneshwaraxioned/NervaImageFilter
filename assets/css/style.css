@@ -259,6 +259,8 @@ footer {
   font-size: 15px; 
 }
 
+.recent-post a:hover {color: #fff; }
+
 .populer-tag { padding-right: 25px; }
 
 .populer-tag a {
@@ -312,7 +314,10 @@ footer {
 .social .fa { 
   color: #949292;
   font-size: 15px;
+  transition: .4s;
 }
+
+.social li:hover .fa { color: #000; }
  /*=================================
   footer styling ends here
 =================================*/ 
