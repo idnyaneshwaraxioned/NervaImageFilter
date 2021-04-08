@@ -246,14 +246,35 @@ border-bottom: 2px solid #2a2828;
 .modal {
   width: 800px;
   height: 400px;
-  background-color: tan;
+  border: 2px solid #fff;
+  border-radius: 10px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  display: none;
 }
 
-video { width: 100%; }
+.modal.active { display: block; }
+
+.closbtn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.closbtn a {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #000;
+  background-color: #91D0A5;
+}
+
+video { 
+  width: 100%;
+  border-radius: 10px;
+}
 
 /* =========Thumbnail Ends=============== */
 /*=================================
