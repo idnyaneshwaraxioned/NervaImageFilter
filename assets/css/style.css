@@ -207,13 +207,60 @@ border-bottom: 2px solid #2a2828;
   main styling ends here
 =================================*/
 
+/* =========Thumbnail start=============== */
+.videothumbnail .wrapper {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videothumbnail img { border-radius: 20px; }
+
+.thumbnail { position: relative; }
+
+.thumbnail .btn {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #615f5f;
+}
+
+.thumbnail .btn:hover {
+  box-shadow: none;
+  border: 1px solid;
+}
+
+.btn .fa {
+  font-size: 80px;
+  color: #fff;
+}
+
+.modal {
+  width: 800px;
+  height: 400px;
+  background-color: tan;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+video { width: 100%; }
+
+/* =========Thumbnail Ends=============== */
 /*=================================
   footer styling starts here
 =================================*/ 
 
-footer {
-  padding-top: 30px;
-}
+footer { padding-top: 30px; }
 
 .footerup h2 {
   margin-bottom: 22px;
