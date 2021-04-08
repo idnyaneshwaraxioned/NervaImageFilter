@@ -99,17 +99,73 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1634px;
+  width: 76%;
   margin: 0 auto;
 }
+
+.container { background-color: #1E1E1E; }
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper { 
+  padding: 42px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #2a2828;
+}
 
+.logo { flex-basis: 20%; }
 
+.logo a{
+  font-size: 46px;
+  color: #fff;
+  font-weight: bold;
+}
 
+nav { flex-basis: 42%; }
 
+.hamburger { 
+  width: 40px;
+  height: 40px;
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 7%;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  border-top: 2px solid #fff;
+  text-indent: -99999px;
+  height: 0;
+  margin-bottom: 6px;
+  float: left;
+}
+
+.hamburger:hover .bar1 { transform: rotate(45deg) translateX(7px); }
+.hamburger:hover .bar2 { display: none; }
+.hamburger:hover .bar3 { transform: rotate(-45deg) translateX(5px); }
+
+.menu { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  padding: 15px 0;
+  font-size: 16px;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
+  color: #b7b3b3;
+  transition: .4s;
+  border-bottom: 4px solid #1E1E1E;
+}
+
+.menu a.active,
+.menu a:hover { border-bottom: 4px solid #9DC7AD; }
 
 
 /*=================================
@@ -119,13 +175,33 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+main .wrapper {
+padding-bottom: 45px;
+border-bottom: 2px solid #2a2828;
+}
 
+.filter-list {
+  display: flex;
+}
 
+.filter-list a {
+  color: #d4d1d1;
+  padding: 6px 13px;
+  margin: 30px 7px;
+  transition: .4s;
+}
 
+.filter-list a.active,
+.filter-list a:hover { background-color: #9DC7AD; }
 
+.imageGroup {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-
-
+.imageGroup li {
+  margin: 0;
+}
 
 /*=================================
   main styling ends here
@@ -135,12 +211,108 @@ li {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding-top: 30px;
+}
 
+.footerup h2 {
+  margin-bottom: 22px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #e1d5d5;
+}
 
+.footer-ul { 
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer-ul li { flex-basis: 23%; }
 
+.footer-ul p {
+  margin-bottom: 25px;
+  color: #615f5f;
+  font-size: 15px;
+  line-height: 20px;
+}
 
+.footerup a { color: #615f5f; }
 
+.recent-post li {
+  width: 100%;    
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #343333;
+}
+
+.recent-post li:last-child { border: none; }
+
+.recent-post {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.recent-post a { 
+  padding-right: 12px;
+  font-size: 15px; 
+}
+
+.populer-tag { padding-right: 25px; }
+
+.populer-tag a {
+  padding: 8px 12px;
+  margin: 5px 2px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #91D0A5;
+  transition: .4s;
+}
+
+.populer-tag a.active,
+.populer-tag a:hover { background-color: #d4d1d1; }
+
+.flickr-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flickr-gallery li { 
+  margin-bottom: 11px;
+  flex-basis: 22.5%;
+ }
+
+.footer-down {
+  padding: 23px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #2a2828;
+}
+
+.footer-down span {
+  color: #9f9a9a;
+  font-size: 15px;
+}
+
+.social { display: flex; }
+
+.social li { 
+  width: 27px;
+  height: 27px;
+  margin: 0 6px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ede8e8;
+}
+
+.social a { line-height: 27px; }
+
+.social .fa { 
+  color: #949292;
+  font-size: 15px;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
