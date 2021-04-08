@@ -99,15 +99,58 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1634px;
+  width: 76%;
   margin: 0 auto;
 }
+
+.container { background-color: #1E1E1E; }
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper { 
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: tan;}
 
+.logo a{
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+}
 
+nav {display: flex; }
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.hamburger::before {
+  content: '';
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  transform: translateY(30px);
+}
+
+.hamburger span { 
+  text-indent: -99999px;
+  float: left;
+}
 
 
 
