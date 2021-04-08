@@ -109,50 +109,62 @@ li {
   Header styling starts here
 =================================*/
 header .wrapper { 
-  padding: 20px 0;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
-  background-color: tan;}
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.logo { flex-basis: 20%; }
 
 .logo a{
-  font-size: 28px;
+  font-size: 46px;
   color: #fff;
   font-weight: bold;
 }
 
-nav {display: flex; }
+nav { flex-basis: 43%; }
 
-.hamburger {
+.hamburger { 
   width: 40px;
   height: 40px;
+  display: none;
   position: absolute;
-  background-color: #fff;
+  right: 5%;
+  top: 7%;
 }
 
-.hamburger::before {
-  content: '';
-  width: 35px;
-  height: 3px;
-  background-color: #000;
-  position: absolute;
-  transform: translateY(10px);
-}
-
-.hamburger::after {
-  content: '';
-  width: 35px;
-  height: 3px;
-  background-color: #000;
-  position: absolute;
-  transform: translateY(30px);
-}
-
-.hamburger span { 
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  border-top: 2px solid #fff;
   text-indent: -99999px;
+  height: 0;
+  margin-bottom: 6px;
   float: left;
 }
 
+.hamburger:hover .bar1 { transform: rotate(45deg) translateX(7px); }
+.hamburger:hover .bar2 { display: none; }
+.hamburger:hover .bar3 { transform: rotate(-45deg) translateX(5px); }
 
+.menu { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #b7b3b3;
+  transition: .4s;
+  border-bottom: 4px solid #1E1E1E;
+}
+
+.menu a:hover { border-bottom: 4px solid #9DC7AD; }
 
 
 /*=================================
@@ -162,13 +174,33 @@ nav {display: flex; }
 /*=================================
   main styling starts here
 =================================*/
+main .wrapper {
+padding-bottom: 45px;
+border-bottom: 1px solid #3f3f3f;
+}
 
+.filter-list {
+  display: flex;
+}
 
+.filter-list a {
+  color: #d4d1d1;
+  padding: 6px 10px;
+  margin: 30px 7px;
+  transition: .4s;
+}
 
+.filter-list a:hover { background-color: #9DC7AD; }
 
+.imageGroup {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-
-
+.imageGroup li {
+  margin: 0;
+}
 
 /*=================================
   main styling ends here
@@ -177,6 +209,10 @@ nav {display: flex; }
 /*=================================
   footer styling starts here
 =================================*/ 
+
+footer {
+  padding: 30px 0;
+}
 
 
 
